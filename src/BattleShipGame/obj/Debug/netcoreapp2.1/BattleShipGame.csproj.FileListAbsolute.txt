@@ -9,3 +9,14 @@ C:\Work\ServicoDireto\battleship\BattleShipGame\BattleShipGame\obj\Debug\netcore
 C:\Work\ServicoDireto\battleship\BattleShipGame\BattleShipGame\obj\Debug\netcoreapp2.1\BattleShipGame.AssemblyInfo.cs
 C:\Work\ServicoDireto\battleship\BattleShipGame\BattleShipGame\obj\Debug\netcoreapp2.1\BattleShipGame.dll
 C:\Work\ServicoDireto\battleship\BattleShipGame\BattleShipGame\obj\Debug\netcoreapp2.1\BattleShipGame.pdb
+C:\Work\ServicoDireto\battleship\src\BattleShipGame\bin\Debug\netcoreapp2.1\BattleShipGame.deps.json
+C:\Work\ServicoDireto\battleship\src\BattleShipGame\bin\Debug\netcoreapp2.1\BattleShipGame.runtimeconfig.json
+C:\Work\ServicoDireto\battleship\src\BattleShipGame\bin\Debug\netcoreapp2.1\BattleShipGame.runtimeconfig.dev.json
+C:\Work\ServicoDireto\battleship\src\BattleShipGame\bin\Debug\netcoreapp2.1\BattleShipGame.dll
+C:\Work\ServicoDireto\battleship\src\BattleShipGame\bin\Debug\netcoreapp2.1\BattleShipGame.pdb
+C:\Work\ServicoDireto\battleship\src\BattleShipGame\obj\Debug\netcoreapp2.1\BattleShipGame.csprojAssemblyReference.cache
+C:\Work\ServicoDireto\battleship\src\BattleShipGame\obj\Debug\netcoreapp2.1\BattleShipGame.csproj.CoreCompileInputs.cache
+C:\Work\ServicoDireto\battleship\src\BattleShipGame\obj\Debug\netcoreapp2.1\BattleShipGame.AssemblyInfoInputs.cache
+C:\Work\ServicoDireto\battleship\src\BattleShipGame\obj\Debug\netcoreapp2.1\BattleShipGame.AssemblyInfo.cs
+C:\Work\ServicoDireto\battleship\src\BattleShipGame\obj\Debug\netcoreapp2.1\BattleShipGame.dll
+C:\Work\ServicoDireto\battleship\src\BattleShipGame\obj\Debug\netcoreapp2.1\BattleShipGame.pdb

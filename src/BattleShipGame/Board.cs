@@ -14,7 +14,7 @@ namespace BattleShipGame
 
         #endregion
 
-        #region [ Constructor]
+        #region [Constructor]
 
         public Board( string playerName )
         {
@@ -33,14 +33,14 @@ namespace BattleShipGame
             end = end.Trim().ToUpper();
             //
             PositionRange range = new PositionRange( Position.Convert( start ), Position.Convert( end ) );
-            AddBattleShip( new BattleShip( range ) );
+            AddBattleShip( new BattleShip( range, string.Format( "{0}->{1}", start, end ) ) );
         }
 
         public void AddBattleShip( string position )
         {
             position = position.Trim().ToUpper();
             PositionRange range = new PositionRange( Position.Convert( position ), Position.Convert( position ) );
-            AddBattleShip( new BattleShip( range ) );
+            AddBattleShip( new BattleShip( range, position ) );
         }
 
         private void AddBattleShip( BattleShip battleShip )
@@ -80,6 +80,7 @@ namespace BattleShipGame
         /// </summary>
         public void DisplayDimension()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             for ( int x = 0; x < Constants.MAX_X; x++ )
             {
                 for ( int y = 0; y < Constants.MAX_Y; y++ )
@@ -97,6 +98,18 @@ namespace BattleShipGame
             }
         }
         #endregion
+
+        /// <summary>
+        /// Display all battleships status
+        /// </summary>
+        public void DisplayBattleShipStatus()
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            foreach ( var item in _battleShips )
+            {
+                Console.WriteLine("{0} - {1}", item.Name, item.GetStatus() );
+            }
+        }
 
         #region [Attack]
         /// <summary>
@@ -138,8 +151,7 @@ namespace BattleShipGame
         public GameStatusType GameStatus()
         {
             var status = ( _battleShips.Count == _battleShips.Where( p => p.GetStatus() == BattleShipStatus.Sunk ).Count() ? GameStatusType.GameOver : GameStatusType.OnGoing );
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine( "[Game Status: {0}]", status );
+            Console.WriteLine( "[Status: {0}]", status );
             return status;
         }
         #endregion

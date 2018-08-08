@@ -12,12 +12,14 @@ namespace BattleShipGame
 
         #region [Properties]
         public List<Position> Positions { get; set; }
+        public string Name { get; set; }
         #endregion
 
         #region [Constructor]
-        public BattleShip( PositionRange range )
+        public BattleShip( PositionRange range , string name)
         {
             Positions = new List<Position>();
+            Name = name;
             _range = range;
             if ( _range.Start.X == _range.End.X )
             {

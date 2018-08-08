@@ -7,24 +7,38 @@ namespace BattleShipGame
         static void Main( string[] args )
         {
             Board board = new Board( "Igor" );
-            board.AddBattleShip( "A1", "A4" );
-            board.AddBattleShip( "B1", "B4" );
-            board.AddBattleShip( "J1", "J3" );
+            board.AddBattleShip( "A1", "B1" );
+            board.AddBattleShip( "D1", "D3" );
+            board.AddBattleShip( "G1", "J1" );
+            board.AddBattleShip( "A3", "A6" );
+            board.AddBattleShip( "F3", "H3" );
+            board.AddBattleShip( "J3", "J4" );
+            board.AddBattleShip( "A8", "B8" );
+            board.AddBattleShip( "F6", "F7" );
+            board.AddBattleShip( "J6", "J8" );
+            board.AddBattleShip( "E10", "J10" );
 
-            //------------------//
-            board.Attack( "A1" ); //HIT
-            board.Attack( "A2" ); 
-            board.Attack( "A3" );
-            board.Attack( "A4" );
-            board.Attack( "A5" ); //MISS
-            //------------------//
-            board.Attack( "B1" );
-            board.Attack( "B2" );
-            board.Attack( "B3" );
-            board.Attack( "B4" );
-
+            board.Attack( "A8" ); //HIT
+            board.Attack( "B6" ); //MISS
+            board.Attack( "B8" ); //HIT
+            board.Attack( "C4" ); //MISS
+            board.Attack( "F5" ); //MISS
+            board.Attack( "G5" ); //MISS
+            board.Attack( "H6" ); //MISS
+            board.Attack( "H8" ); //MISS
+            board.Attack( "J6" ); //HIT
+            board.Attack( "J7" ); //HIT
+            Console.WriteLine( "---------------------GAMESTATUS------------------------" );
             board.GameStatus();
+
+            Console.WriteLine( "---------------------BATTLESHIP_STATUS-----------------" );
+            board.DisplayBattleShipStatus();
+
+            Console.WriteLine( "---------------------DISPLAY ALL POSITIONS-------------" );
             board.DisplayDimension();
+            Console.WriteLine( "-------------------------------------------------" );
+
+
             Console.ReadKey();
         }
     }
